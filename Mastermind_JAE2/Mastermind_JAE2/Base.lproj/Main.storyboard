@@ -390,7 +390,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZt-eA-Kky">
-                                        <rect key="frame" x="258" y="277" width="60" height="39"/>
+                                        <rect key="frame" x="225" y="306" width="170" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
@@ -440,6 +440,7 @@
                         <outlet property="num8guess1" destination="n3T-2I-MCO" id="jgi-l8-k8Q"/>
                         <outlet property="num8guess2" destination="We8-rF-mZ3" id="ED2-tE-BHX"/>
                         <outlet property="num8guess3" destination="hVz-U8-do8" id="rAV-va-XdS"/>
+                        <outlet property="numGuesses" destination="VZt-eA-Kky" id="vBs-k0-hBs"/>
                         <outlet property="pickerView" destination="5ls-C0-5qe" id="67v-aL-7Hz"/>
                         <outlet property="winviewbackground" destination="Wi2-8O-CS3" id="7y9-bR-XMj"/>
                         <outlet property="youLose" destination="RLd-Yy-R41" id="Xze-sr-XBQ"/>
@@ -448,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTn-HT-4Rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="-692"/>
+            <point key="canvasLocation" x="449.64028776978421" y="-692.26618705035969"/>
         </scene>
         <!--Stats Page-->
         <scene sceneID="U40-nH-8sy">
@@ -862,7 +863,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view tag="-2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uNr-Xi-Jsc" userLabel="ViewTN">
-                                <rect key="frame" x="-500" y="309" width="450" height="467"/>
+                                <rect key="frame" x="-501" y="309" width="450" height="467"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="new team name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8w-aL-DLm">
