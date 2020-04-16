@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4450946223D88D3000CE3B21 /* SecondPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450946123D88D3000CE3B21 /* SecondPopUpViewController.swift */; };
+		44F649E323D9D85F003A82F6 /* ThirdPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F649E223D9D85F003A82F6 /* ThirdPopUpViewController.swift */; };
+		5709905D23F594FC009156FF /* GamePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709905C23F594FC009156FF /* GamePopUpViewController.swift */; };
+		7923203523E46C91009FD2FE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7923203423E46C91009FD2FE /* CloudKit.framework */; };
+		792A47E92419137E00472731 /* TeamObjectClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792A47E82419137E00472731 /* TeamObjectClass.swift */; };
+		79D8421C23EC4F2000E95F89 /* StatsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D8421B23EC4F2000E95F89 /* StatsClass.swift */; };
+		EA7A754C23CCB11600CB6766 /* TeamClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A754B23CCB11600CB6766 /* TeamClass.swift */; };
+		EA7A9BCF23E9ABC100B361AF /* GamePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A9BCE23E9ABC100B361AF /* GamePageViewController.swift */; };
+		EADB6F2023CCAAFA00FD0CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB6F1F23CCAAFA00FD0CAB /* AppDelegate.swift */; };
+		EADB6F2223CCAAFA00FD0CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB6F2123CCAAFA00FD0CAB /* ViewController.swift */; };
+		EADB6F2523CCAAFA00FD0CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADB6F2323CCAAFA00FD0CAB /* Main.storyboard */; };
+		EADB6F2723CCAAFD00FD0CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADB6F2623CCAAFD00FD0CAB /* Assets.xcassets */; };
+		EADB6F2A23CCAAFD00FD0CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADB6F2823CCAAFD00FD0CAB /* LaunchScreen.storyboard */; };
+		EADB6F3523CCAAFD00FD0CAB /* Mastermind_JAE2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB6F3423CCAAFD00FD0CAB /* Mastermind_JAE2Tests.swift */; };
+		EADB6F4023CCAAFD00FD0CAB /* Mastermind_JAE2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB6F3F23CCAAFD00FD0CAB /* Mastermind_JAE2UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EADB6F3123CCAAFD00FD0CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EADB6F1423CCAAFA00FD0CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EADB6F1B23CCAAFA00FD0CAB;
+			remoteInfo = Mastermind_JAE2;
+		};
+		EADB6F3C23CCAAFD00FD0CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EADB6F1423CCAAFA00FD0CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EADB6F1B23CCAAFA00FD0CAB;
+			remoteInfo = Mastermind_JAE2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4450946123D88D3000CE3B21 /* SecondPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPopUpViewController.swift; sourceTree = "<group>"; };
+		44F649E223D9D85F003A82F6 /* ThirdPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPopUpViewController.swift; sourceTree = "<group>"; };
+		5709905C23F594FC009156FF /* GamePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePopUpViewController.swift; sourceTree = "<group>"; };
+		7923203223E46C31009FD2FE /* Mastermind_JAE2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mastermind_JAE2.entitlements; sourceTree = "<group>"; };
+		7923203423E46C91009FD2FE /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		792A47E82419137E00472731 /* TeamObjectClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamObjectClass.swift; sourceTree = "<group>"; };
+		79D8421B23EC4F2000E95F89 /* StatsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsClass.swift; sourceTree = "<group>"; };
+		EA7A754B23CCB11600CB6766 /* TeamClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamClass.swift; sourceTree = "<group>"; };
+		EA7A9BCE23E9ABC100B361AF /* GamePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePageViewController.swift; sourceTree = "<group>"; };
+		EADB6F1C23CCAAFA00FD0CAB /* Mastermind_JAE2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind_JAE2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADB6F1F23CCAAFA00FD0CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EADB6F2123CCAAFA00FD0CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EADB6F2423CCAAFA00FD0CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EADB6F2623CCAAFD00FD0CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EADB6F2923CCAAFD00FD0CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EADB6F2B23CCAAFD00FD0CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADB6F3023CCAAFD00FD0CAB /* Mastermind_JAE2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mastermind_JAE2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADB6F3423CCAAFD00FD0CAB /* Mastermind_JAE2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastermind_JAE2Tests.swift; sourceTree = "<group>"; };
+		EADB6F3623CCAAFD00FD0CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADB6F3B23CCAAFD00FD0CAB /* Mastermind_JAE2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mastermind_JAE2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADB6F3F23CCAAFD00FD0CAB /* Mastermind_JAE2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastermind_JAE2UITests.swift; sourceTree = "<group>"; };
+		EADB6F4123CCAAFD00FD0CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EADB6F1923CCAAFA00FD0CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7923203523E46C91009FD2FE /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADB6F2D23CCAAFD00FD0CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADB6F3823CCAAFD00FD0CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7923203323E46C91009FD2FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7923203423E46C91009FD2FE /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EADB6F1323CCAAFA00FD0CAB = {
+			isa = PBXGroup;
+			children = (
+				EADB6F1E23CCAAFA00FD0CAB /* Mastermind_JAE2 */,
+				EADB6F3323CCAAFD00FD0CAB /* Mastermind_JAE2Tests */,
+				EADB6F3E23CCAAFD00FD0CAB /* Mastermind_JAE2UITests */,
+				EADB6F1D23CCAAFA00FD0CAB /* Products */,
+				7923203323E46C91009FD2FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EADB6F1D23CCAAFA00FD0CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EADB6F1C23CCAAFA00FD0CAB /* Mastermind_JAE2.app */,
+				EADB6F3023CCAAFD00FD0CAB /* Mastermind_JAE2Tests.xctest */,
+				EADB6F3B23CCAAFD00FD0CAB /* Mastermind_JAE2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EADB6F1E23CCAAFA00FD0CAB /* Mastermind_JAE2 */ = {
+			isa = PBXGroup;
+			children = (
+				7923203223E46C31009FD2FE /* Mastermind_JAE2.entitlements */,
+				EADB6F1F23CCAAFA00FD0CAB /* AppDelegate.swift */,
+				EA7A9BCE23E9ABC100B361AF /* GamePageViewController.swift */,
+				EADB6F2123CCAAFA00FD0CAB /* ViewController.swift */,
+				EADB6F2323CCAAFA00FD0CAB /* Main.storyboard */,
+				5709905C23F594FC009156FF /* GamePopUpViewController.swift */,
+				EA7A754B23CCB11600CB6766 /* TeamClass.swift */,
+				792A47E82419137E00472731 /* TeamObjectClass.swift */,
+				79D8421B23EC4F2000E95F89 /* StatsClass.swift */,
+				44F649E223D9D85F003A82F6 /* ThirdPopUpViewController.swift */,
+				4450946123D88D3000CE3B21 /* SecondPopUpViewController.swift */,
+				EADB6F2623CCAAFD00FD0CAB /* Assets.xcassets */,
+				EADB6F2823CCAAFD00FD0CAB /* LaunchScreen.storyboard */,
+				EADB6F2B23CCAAFD00FD0CAB /* Info.plist */,
+			);
+			path = Mastermind_JAE2;
+			sourceTree = "<group>";
+		};
+		EADB6F3323CCAAFD00FD0CAB /* Mastermind_JAE2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EADB6F3423CCAAFD00FD0CAB /* Mastermind_JAE2Tests.swift */,
+				EADB6F3623CCAAFD00FD0CAB /* Info.plist */,
+			);
+			path = Mastermind_JAE2Tests;
+			sourceTree = "<group>";
+		};
+		EADB6F3E23CCAAFD00FD0CAB /* Mastermind_JAE2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EADB6F3F23CCAAFD00FD0CAB /* Mastermind_JAE2UITests.swift */,
+				EADB6F4123CCAAFD00FD0CAB /* Info.plist */,
+			);
+			path = Mastermind_JAE2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EADB6F1B23CCAAFA00FD0CAB /* Mastermind_JAE2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADB6F4423CCAAFD00FD0CAB /* Build configuration list for PBXNativeTarget "Mastermind_JAE2" */;
+			buildPhases = (
+				EADB6F1823CCAAFA00FD0CAB /* Sources */,
+				EADB6F1923CCAAFA00FD0CAB /* Frameworks */,
+				EADB6F1A23CCAAFA00FD0CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mastermind_JAE2;
+			productName = Mastermind_JAE2;
+			productReference = EADB6F1C23CCAAFA00FD0CAB /* Mastermind_JAE2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EADB6F2F23CCAAFD00FD0CAB /* Mastermind_JAE2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADB6F4723CCAAFD00FD0CAB /* Build configuration list for PBXNativeTarget "Mastermind_JAE2Tests" */;
+			buildPhases = (
+				EADB6F2C23CCAAFD00FD0CAB /* Sources */,
+				EADB6F2D23CCAAFD00FD0CAB /* Frameworks */,
+				EADB6F2E23CCAAFD00FD0CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EADB6F3223CCAAFD00FD0CAB /* PBXTargetDependency */,
+			);
+			name = Mastermind_JAE2Tests;
+			productName = Mastermind_JAE2Tests;
+			productReference = EADB6F3023CCAAFD00FD0CAB /* Mastermind_JAE2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EADB6F3A23CCAAFD00FD0CAB /* Mastermind_JAE2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADB6F4A23CCAAFD00FD0CAB /* Build configuration list for PBXNativeTarget "Mastermind_JAE2UITests" */;
+			buildPhases = (
+				EADB6F3723CCAAFD00FD0CAB /* Sources */,
+				EADB6F3823CCAAFD00FD0CAB /* Frameworks */,
+				EADB6F3923CCAAFD00FD0CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EADB6F3D23CCAAFD00FD0CAB /* PBXTargetDependency */,
+			);
+			name = Mastermind_JAE2UITests;
+			productName = Mastermind_JAE2UITests;
+			productReference = EADB6F3B23CCAAFD00FD0CAB /* Mastermind_JAE2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EADB6F1423CCAAFA00FD0CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "BURRIGHT, JACK";
+				TargetAttributes = {
+					EADB6F1B23CCAAFA00FD0CAB = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					EADB6F2F23CCAAFD00FD0CAB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = EADB6F1B23CCAAFA00FD0CAB;
+					};
+					EADB6F3A23CCAAFD00FD0CAB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = EADB6F1B23CCAAFA00FD0CAB;
+					};
+				};
+			};
+			buildConfigurationList = EADB6F1723CCAAFA00FD0CAB /* Build configuration list for PBXProject "Mastermind_JAE2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EADB6F1323CCAAFA00FD0CAB;
+			productRefGroup = EADB6F1D23CCAAFA00FD0CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EADB6F1B23CCAAFA00FD0CAB /* Mastermind_JAE2 */,
+				EADB6F2F23CCAAFD00FD0CAB /* Mastermind_JAE2Tests */,
+				EADB6F3A23CCAAFD00FD0CAB /* Mastermind_JAE2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EADB6F1A23CCAAFA00FD0CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADB6F2A23CCAAFD00FD0CAB /* LaunchScreen.storyboard in Resources */,
+				EADB6F2723CCAAFD00FD0CAB /* Assets.xcassets in Resources */,
+				EADB6F2523CCAAFA00FD0CAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADB6F2E23CCAAFD00FD0CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADB6F3923CCAAFD00FD0CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EADB6F1823CCAAFA00FD0CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7A754C23CCB11600CB6766 /* TeamClass.swift in Sources */,
+				EADB6F2223CCAAFA00FD0CAB /* ViewController.swift in Sources */,
+				792A47E92419137E00472731 /* TeamObjectClass.swift in Sources */,
+				79D8421C23EC4F2000E95F89 /* StatsClass.swift in Sources */,
+				4450946223D88D3000CE3B21 /* SecondPopUpViewController.swift in Sources */,
+				EADB6F2023CCAAFA00FD0CAB /* AppDelegate.swift in Sources */,
+				5709905D23F594FC009156FF /* GamePopUpViewController.swift in Sources */,
+				44F649E323D9D85F003A82F6 /* ThirdPopUpViewController.swift in Sources */,
+				EA7A9BCF23E9ABC100B361AF /* GamePageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADB6F2C23CCAAFD00FD0CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADB6F3523CCAAFD00FD0CAB /* Mastermind_JAE2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADB6F3723CCAAFD00FD0CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADB6F4023CCAAFD00FD0CAB /* Mastermind_JAE2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EADB6F3223CCAAFD00FD0CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EADB6F1B23CCAAFA00FD0CAB /* Mastermind_JAE2 */;
+			targetProxy = EADB6F3123CCAAFD00FD0CAB /* PBXContainerItemProxy */;
+		};
+		EADB6F3D23CCAAFD00FD0CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EADB6F1B23CCAAFA00FD0CAB /* Mastermind_JAE2 */;
+			targetProxy = EADB6F3C23CCAAFD00FD0CAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EADB6F2323CCAAFA00FD0CAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EADB6F2423CCAAFA00FD0CAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EADB6F2823CCAAFD00FD0CAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EADB6F2923CCAAFD00FD0CAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EADB6F4223CCAAFD00FD0CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EADB6F4323CCAAFD00FD0CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EADB6F4523CCAAFD00FD0CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mastermind_JAE2/Mastermind_JAE2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96L2Y94678;
+				INFOPLIST_FILE = Mastermind_JAE2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TheRealMastermind-JAE2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EADB6F4623CCAAFD00FD0CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mastermind_JAE2/Mastermind_JAE2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96L2Y94678;
+				INFOPLIST_FILE = Mastermind_JAE2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TheRealMastermind-JAE2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EADB6F4823CCAAFD00FD0CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mastermind_JAE2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.district196.Mastermind-JAE2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mastermind_JAE2.app/Mastermind_JAE2";
+			};
+			name = Debug;
+		};
+		EADB6F4923CCAAFD00FD0CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mastermind_JAE2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.district196.Mastermind-JAE2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mastermind_JAE2.app/Mastermind_JAE2";
+			};
+			name = Release;
+		};
+		EADB6F4B23CCAAFD00FD0CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mastermind_JAE2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.district196.Mastermind-JAE2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mastermind_JAE2;
+			};
+			name = Debug;
+		};
+		EADB6F4C23CCAAFD00FD0CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mastermind_JAE2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.district196.Mastermind-JAE2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mastermind_JAE2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EADB6F1723CCAAFA00FD0CAB /* Build configuration list for PBXProject "Mastermind_JAE2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADB6F4223CCAAFD00FD0CAB /* Debug */,
+				EADB6F4323CCAAFD00FD0CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EADB6F4423CCAAFD00FD0CAB /* Build configuration list for PBXNativeTarget "Mastermind_JAE2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADB6F4523CCAAFD00FD0CAB /* Debug */,
+				EADB6F4623CCAAFD00FD0CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EADB6F4723CCAAFD00FD0CAB /* Build configuration list for PBXNativeTarget "Mastermind_JAE2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADB6F4823CCAAFD00FD0CAB /* Debug */,
+				EADB6F4923CCAAFD00FD0CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EADB6F4A23CCAAFD00FD0CAB /* Build configuration list for PBXNativeTarget "Mastermind_JAE2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADB6F4B23CCAAFD00FD0CAB /* Debug */,
+				EADB6F4C23CCAAFD00FD0CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EADB6F1423CCAAFA00FD0CAB /* Project object */;
+}
