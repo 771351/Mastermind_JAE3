@@ -857,6 +857,10 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Va-Cl-xv2">
                                 <rect key="frame" x="1" y="347" width="834" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SwB-UR-tWj"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="d0u-bh-30U"/>
+                                </connections>
                             </pickerView>
                             <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uby-eD-EbP">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
@@ -877,7 +881,7 @@
                                         <rect key="frame" x="176" y="217" width="97" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TN-2e-N9a">
                                         <rect key="frame" x="158" y="360" width="134" height="52"/>
@@ -914,6 +918,8 @@
                         <outlet property="View" destination="8bC-Xf-vdC" id="Q8v-Jp-NVw"/>
                         <outlet property="ViewTNa" destination="uNr-Xi-Jsc" id="1mx-5p-sbI"/>
                         <outlet property="backgroundview" destination="uby-eD-EbP" id="ixK-0l-oKT"/>
+                        <outlet property="newName" destination="nvA-2c-LZg" id="oVL-Zh-4ta"/>
+                        <outlet property="pickerviewteam" destination="6Va-Cl-xv2" id="6a3-Zq-GyC"/>
                         <outlet property="totalview" destination="8bC-Xf-vdC" id="2VF-y8-Foq"/>
                     </connections>
                 </viewController>
