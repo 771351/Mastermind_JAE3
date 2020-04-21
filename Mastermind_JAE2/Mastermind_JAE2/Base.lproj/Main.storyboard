@@ -27,7 +27,7 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="bwc-th-Vdw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="**Team Names**" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-sM-2hN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="**Team Names**" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-sM-2hN">
                                 <rect key="frame" x="277" y="20" width="280" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
@@ -335,10 +335,6 @@
                                     <action selector="goButton:" destination="GIU-bG-cmC" eventType="touchUpInside" id="7jJ-Ns-L3A"/>
                                 </connections>
                             </button>
-                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wi2-8O-CS3">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLd-Yy-R41">
                                 <rect key="frame" x="1000" y="300.5" width="470" height="512"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -399,6 +395,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wi2-8O-CS3">
+                                <rect key="frame" x="-74" y="9" width="834" height="1112"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.46582472320000001" green="0.66389781240000001" blue="0.98349243399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -416,6 +416,7 @@
                         <outlet property="Answer6" destination="q6p-Cl-gRK" id="zXE-lW-QkQ"/>
                         <outlet property="Answer7" destination="QgY-xs-6qQ" id="Vqg-AB-VfN"/>
                         <outlet property="Answer8" destination="YId-yW-6Dq" id="oSk-ZQ-mm3"/>
+                        <outlet property="TeamNamePlay" destination="hGc-sM-2hN" id="xaP-FK-QX2"/>
                         <outlet property="num1guess1" destination="Taj-IL-wfE" id="jUL-D6-vpd"/>
                         <outlet property="num1guess2" destination="ueA-Ug-M7E" id="oiF-JM-diw"/>
                         <outlet property="num1guess3" destination="mIj-8r-E36" id="Awh-eE-e3T"/>
@@ -449,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTn-HT-4Rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449.64028776978421" y="-692.26618705035969"/>
+            <point key="canvasLocation" x="11" y="-676"/>
         </scene>
         <!--Stats Page-->
         <scene sceneID="U40-nH-8sy">
@@ -733,6 +734,7 @@
                         <color key="backgroundColor" red="0.43324732780456543" green="0.6517825722694397" blue="0.9838373064994812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bM6-vS-Qeg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gRL-ku-w6u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXT-04-7M6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -843,7 +845,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="GIU-bG-cmC" kind="show" id="9jm-E0-Uc0"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uns-Bp-DKC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mastermind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVY-UQ-9f9">
@@ -876,7 +878,7 @@
                                 </connections>
                             </pickerView>
                             <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uby-eD-EbP">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1268"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -961,6 +963,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1i7-DH-XZh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="40x-9T-L8i"/>
                     <connections>
                         <outlet property="View" destination="8bC-Xf-vdC" id="Q8v-Jp-NVw"/>
                         <outlet property="ViewTNa" destination="uNr-Xi-Jsc" id="1mx-5p-sbI"/>
@@ -968,6 +971,7 @@
                         <outlet property="newName" destination="nvA-2c-LZg" id="oVL-Zh-4ta"/>
                         <outlet property="pickerviewteam" destination="6Va-Cl-xv2" id="6a3-Zq-GyC"/>
                         <outlet property="totalview" destination="8bC-Xf-vdC" id="2VF-y8-Foq"/>
+                        <segue destination="GIU-bG-cmC" kind="presentation" identifier="team" id="WUg-gw-uK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

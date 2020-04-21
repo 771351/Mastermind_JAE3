@@ -46,6 +46,11 @@ class GamePageViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     @IBOutlet weak var Answer8: UILabel!
     @IBOutlet weak var youWin: UIView!
     
+
+    @IBOutlet weak var TeamNamePlay: UILabel!
+    var playingTeam = ""
+    
+    
     @IBOutlet weak var youLose: UIView!
     @IBOutlet weak var winviewbackground: UIView!
     
@@ -507,6 +512,7 @@ class GamePageViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         youWin.layer.cornerRadius = 40
         youLose.layer.cornerRadius = 40
           CorrectAnswer()
+        TeamNamePlay.text = playingTeam
         // Do any additional setup after loading the view.
     }
     

@@ -20,7 +20,11 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         teamlist[row].teamName
     }
+    var selectedTeam : String?
     func reloadAllComponents(){}
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        selectedTeam = teamlist[row].teamName
+    }
     
 
   
@@ -162,5 +166,18 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             }
         }
     
+    
+    @IBAction func play(_ sender: Any) {
+        performSegue(withIdentifier: "team" , sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! GamePageViewController
+        vc.playingTeam = selectedTeam!
+        
+    }
+       
+    
 }
+
 
