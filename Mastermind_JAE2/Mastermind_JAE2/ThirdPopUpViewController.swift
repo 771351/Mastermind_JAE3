@@ -12,12 +12,13 @@ class ThirdPopUpViewController: UIViewController {
 //popup view controller for the rules page
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        rulesview.layer.cornerRadius = 40
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
 
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var rulesview: UIView!
     @IBAction func closePopUp(_ sender: UIButton) {
         self.view.removeFromSuperview()
     }

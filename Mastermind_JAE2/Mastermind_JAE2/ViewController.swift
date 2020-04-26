@@ -28,10 +28,12 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     
 
   
-    @IBOutlet weak var newName: UITextField!
+   
+    @IBOutlet weak var newName3: UITextField!
+   
     @IBOutlet weak var pickerviewteam: UIPickerView!
     @IBOutlet var Totalview: UIView!
-    @IBOutlet weak var backgroundButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -56,23 +58,25 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     @IBAction func showPopUp(_ sender: UIButton) {
         ViewTNa.frame.origin.x = 192
         backgroundview.alpha = 0.7
+       
     }
     //moves popup off screen
     @IBAction func closebuttom (_ sender: Any) {
         ViewTNa.frame.origin.x = -500
         backgroundview.alpha = 0
-        newName.text = ""
+        newName3.text = ""
+        
     }
     //moves popup off screen
     @IBAction func goteamname(_ sender: Any) {
-        if newName.text != ""
-        {
-            doesTeamNameWork(newteamNAME: newName.text!)
-        ViewTNa.frame.origin.x = -500
-        backgroundview.alpha = 0
+        if newName3.text != "" {
+        doesTeamNameWork(newteamNAME: newName3.text!)
+            ViewTNa.frame.origin.x = -500
+            backgroundview.alpha = 0
             pickerviewteam.reloadAllComponents()
-            newName.text = ""
+            newName3.text = ""
         }
+        
     }
     
     
