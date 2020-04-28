@@ -20,10 +20,10 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         teamlist[row].teamName
     }
-    var selectedTeam : String = ""
+    var selectedTeam = teamClass (name: "xxxxxx")
     func reloadAllComponents(){}
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
-        selectedTeam = teamlist[row].teamName
+        selectedTeam = teamlist[row]
     }
     
 
@@ -48,7 +48,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         Team8.restore(fileName: "Team8")
         Team9.restore(fileName: "Team9")
         Team10.restore(fileName: "Team10")
-       
+        selectedTeam.restore(fileName: "Team1")
     
     }
     //popup to add new team

@@ -11,7 +11,7 @@ import UIKit
 class StatsViewController: UIViewController {
 
     
-    var playingTeam = ""
+    var playingTeam = teamClass (name: "xxxxxx")
     
     
     override func viewDidLoad() {

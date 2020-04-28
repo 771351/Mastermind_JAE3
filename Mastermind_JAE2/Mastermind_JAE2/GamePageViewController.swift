@@ -48,7 +48,7 @@ class GamePageViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     
 
     @IBOutlet weak var TeamNamePlay: UILabel!
-    var playingTeam = ""
+    var playingTeam = teamClass(name: "xxxxxx")
     
     
     @IBOutlet weak var youLose: UIView!
@@ -512,7 +512,7 @@ class GamePageViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         youWin.layer.cornerRadius = 40
         youLose.layer.cornerRadius = 40
           CorrectAnswer()
-        TeamNamePlay.text = playingTeam
+        TeamNamePlay.text = playingTeam.teamName
         // Do any additional setup after loading the view.
     }
     
