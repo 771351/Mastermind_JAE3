@@ -455,7 +455,7 @@
         <!--Stats Page-->
         <scene sceneID="U40-nH-8sy">
             <objects>
-                <viewController title="Stats Page" modalPresentationStyle="fullScreen" id="5Ot-Vp-APe" sceneMemberID="viewController">
+                <viewController title="Stats Page" modalPresentationStyle="fullScreen" id="5Ot-Vp-APe" customClass="StatsViewController" customModule="Mastermind_JAE2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A8v-Do-S6k">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -804,11 +804,11 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="Home Page" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Mastermind_JAE2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eud-IC-z9O">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eud-IC-z9O">
                                 <rect key="frame" x="70" y="806" width="716" height="119"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="80"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -817,10 +817,10 @@
                                     <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5Ot-Vp-APe" kind="show" id="Ans-0O-iNS"/>
+                                    <segue destination="5Ot-Vp-APe" kind="show" identifier="stats" id="Ans-0O-iNS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-je-K2e">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-je-K2e">
                                 <rect key="frame" x="295" y="610" width="244" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="M5x-eI-l8m"/>
@@ -831,7 +831,7 @@
                                     <action selector="showPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ll5-Nh-g4g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A43-r3-c9B">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A43-r3-c9B">
                                 <rect key="frame" x="353" y="713" width="131" height="63"/>
                                 <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -848,7 +848,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uns-Bp-DKC"/>
+                                    <segue destination="GIU-bG-cmC" kind="presentation" identifier="team" id="Cjk-dk-6to"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mastermind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVY-UQ-9f9">
@@ -860,7 +860,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-7k-kva">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-7k-kva">
                                 <rect key="frame" x="70" y="933" width="698" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="utg-2s-8v7"/>
@@ -880,7 +880,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="d0u-bh-30U"/>
                                 </connections>
                             </pickerView>
-                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uby-eD-EbP">
+                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uby-eD-EbP">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1294"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -961,7 +961,6 @@
                         <outlet property="newName3" destination="O0I-L9-Rwb" id="j0S-py-Sn2"/>
                         <outlet property="pickerviewteam" destination="6Va-Cl-xv2" id="6a3-Zq-GyC"/>
                         <outlet property="totalview" destination="8bC-Xf-vdC" id="2VF-y8-Foq"/>
-                        <segue destination="GIU-bG-cmC" kind="presentation" identifier="team" id="WUg-gw-uK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -970,6 +969,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bwc-th-Vdw"/>
+        <segue reference="Eiw-X1-rQB"/>
     </inferredMetricsTieBreakers>
 </document>

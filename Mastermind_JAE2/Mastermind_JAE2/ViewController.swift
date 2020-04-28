@@ -171,14 +171,18 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         }
     
     
-    @IBAction func play(_ sender: Any) {
-        performSegue(withIdentifier: "team" , sender: self)
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "team"
+        {
         var vc = segue.destination as! GamePageViewController
         vc.playingTeam = selectedTeam 
-        
+        }
+        else {
+            var vc = segue.destination as! StatsViewController
+            vc.playingTeam = selectedTeam
+        }
     }
        
     
