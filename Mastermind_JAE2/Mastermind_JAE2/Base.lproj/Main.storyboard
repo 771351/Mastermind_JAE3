@@ -735,6 +735,26 @@
                         <viewLayoutGuide key="safeArea" id="bM6-vS-Qeg"/>
                     </view>
                     <navigationItem key="navigationItem" id="gRL-ku-w6u"/>
+                    <connections>
+                        <outlet property="average" destination="nIc-Ea-K26" id="ZYc-oA-YKZ"/>
+                        <outlet property="eightTries" destination="dhz-Zj-cDQ" id="pRC-ra-fsD"/>
+                        <outlet property="fifthPlace" destination="abm-EW-UxL" id="vwh-v3-JOr"/>
+                        <outlet property="firstPlace" destination="936-0I-T7E" id="FUB-3l-FuL"/>
+                        <outlet property="fiveTries" destination="W7t-ca-clg" id="K9B-aI-6BL"/>
+                        <outlet property="fourTries" destination="p5f-6E-UbM" id="aW8-A1-Jhl"/>
+                        <outlet property="fourthPlace" destination="4kW-Si-Mwv" id="bSk-gN-tvc"/>
+                        <outlet property="gamesLost" destination="6K3-Ty-ETI" id="IgH-Kx-XNy"/>
+                        <outlet property="oneTry" destination="oXa-eR-n6B" id="Pqp-i8-nML"/>
+                        <outlet property="secondPlace" destination="Rva-qC-5Il" id="Hjh-dH-iz1"/>
+                        <outlet property="sevenTries" destination="xZC-35-fTx" id="5vy-ub-yaq"/>
+                        <outlet property="seventhPlace" destination="rlJ-bs-GXT" id="oBL-aV-4Is"/>
+                        <outlet property="sixTries" destination="dgK-iv-mol" id="Rxs-5N-KCn"/>
+                        <outlet property="sixthPlace" destination="fH8-F8-2Cc" id="1zm-Wg-jFB"/>
+                        <outlet property="thirdPlace" destination="QZt-Nn-Ysp" id="w9x-Gx-rpw"/>
+                        <outlet property="threeTries" destination="edc-Sp-Ogl" id="GPO-DU-L8g"/>
+                        <outlet property="totalGamesPlayed" destination="4N2-r3-ZIy" id="mIG-e6-SBg"/>
+                        <outlet property="twoTries" destination="GA0-Pi-HMU" id="H3f-3j-jgI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXT-04-7M6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
