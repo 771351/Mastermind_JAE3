@@ -8,10 +8,20 @@
 
 import UIKit
 
-class StatsViewController: UIViewController {
+class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     
-    var playingTeam = teamClass (name: "xxxxxx")
+    var Team1 = teamClass (name: "xxxxxx")
+    var Team2 = teamClass (name: "xxxxxx")
+    var Team3 = teamClass (name: "xxxxxx")
+    var Team4 = teamClass (name: "xxxxxx")
+    var Team5 = teamClass (name: "xxxxxx")
+    var Team6 = teamClass (name: "xxxxxx")
+    var Team7 = teamClass (name: "xxxxxx")
+    var Team8 = teamClass (name: "xxxxxx")
+    var Team9 = teamClass (name: "xxxxxx")
+    var Team10 = teamClass (name: "xxxxxx")
+    
     
     //outlets for all textfeilds on the stats page
     @IBOutlet weak var firstPlace: UITextField!
@@ -33,10 +43,31 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var average: UITextField!
     @IBOutlet weak var totalGamesPlayed: UITextField!
     
+    @IBOutlet weak var teamsPickerView: UIPickerView!
     
+      lazy var teamlist = [Team1, Team2, Team3, Team4, Team5, Team6, Team7, Team8, Team9, Team10]
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+           return 1
+       }
+       
+    func pickerView( _ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+           return teamlist.count
+           
+       }
+       func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        teamlist[row].teamName
+        }
+        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+       }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.teamsPickerView.delegate = self
+        self.teamsPickerView.dataSource = self
+        
+        firstPlace.text = Team1.teamName
+        
         // Do any additional setup after loading the view.
     }
     

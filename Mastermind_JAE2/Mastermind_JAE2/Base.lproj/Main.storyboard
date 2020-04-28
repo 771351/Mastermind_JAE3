@@ -750,6 +750,7 @@
                         <outlet property="seventhPlace" destination="rlJ-bs-GXT" id="oBL-aV-4Is"/>
                         <outlet property="sixTries" destination="dgK-iv-mol" id="Rxs-5N-KCn"/>
                         <outlet property="sixthPlace" destination="fH8-F8-2Cc" id="1zm-Wg-jFB"/>
+                        <outlet property="teamsPickerView" destination="dJW-nU-VSw" id="E8B-NK-uqd"/>
                         <outlet property="thirdPlace" destination="QZt-Nn-Ysp" id="w9x-Gx-rpw"/>
                         <outlet property="threeTries" destination="edc-Sp-Ogl" id="GPO-DU-L8g"/>
                         <outlet property="totalGamesPlayed" destination="4N2-r3-ZIy" id="mIG-e6-SBg"/>

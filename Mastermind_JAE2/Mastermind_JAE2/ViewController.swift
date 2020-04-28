@@ -181,7 +181,19 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         }
         else {
             var vc = segue.destination as! StatsViewController
-            vc.playingTeam = selectedTeam
+            vc.Team1 = Team1
+            vc.Team2 = Team2
+            vc.Team3 = Team3
+            vc.Team4 = Team4
+            vc.Team5 = Team5
+            vc.Team6 = Team6
+            vc.Team7 = Team7
+            vc.Team8 = Team8
+            vc.Team9 = Team9
+            vc.Team10 = Team10
+                       
+            
+            
         }
     }
        
