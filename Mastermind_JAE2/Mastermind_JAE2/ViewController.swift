@@ -24,8 +24,9 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     func reloadAllComponents(){}
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         selectedTeam = teamlist[row]
+        teamSelectedNum = String(teamlist.count)
     }
-    
+    var teamSelectedNum = "1"
 
   
    
@@ -177,7 +178,8 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         if segue.identifier == "team"
         {
         var vc = segue.destination as! GamePageViewController
-        vc.playingTeam = selectedTeam 
+        vc.playingTeam = selectedTeam
+            vc.teamNum = teamSelectedNum
         }
         else {
             var vc = segue.destination as! StatsViewController

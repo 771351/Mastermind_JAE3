@@ -12,7 +12,7 @@ class teamClass : Codable {
     var gamesP : Int
     var gamesW : Int
     var gamesL : Int
-    var aver : Int
+    var aver : Double
     var won1 : Int
     var won2 : Int
     var won3 : Int
@@ -42,6 +42,15 @@ class teamClass : Codable {
         self.gameGuess = 0
         self.everyGuess = 0
     }
+    //function that returns string with team stats
+    func teamStats() -> String {
+        var stats = ""
+        stats = "Total guesses: \(self.everyGuess)" + " Games Played: \(self.gamesP)"
+        stats = stats + " average: \(self.aver)"
+        
+        return stats
+    }
+    
     
     //changes team name
     func changename(name: String){
@@ -62,11 +71,11 @@ class teamClass : Codable {
        }
     //changes the teams average
     func changeaver(){
-        self.aver = self.everyGuess/self.gamesP
+        self.aver = Double(Double(self.everyGuess)/Double(self.gamesP))
           }
     
     //will add one game played, updates total guesses and team average
-    func gameDONE(gamesP: Int, aver: Int, gameGuess: Int){
+    func gameDONE(gameGuess: Int){
         
         self.gamesP = gamesP+1
         
@@ -94,9 +103,12 @@ class teamClass : Codable {
         else if (self.gameGuess == 8){
             self.won8 = self.won8+1
         }
+        else{
+            self.gamesL = self.gamesL + 1
+        }
         
         self.everyGuess = self.everyGuess + gameGuess
-        self.aver = (self.everyGuess / gamesP)
+        self.aver = Double((Double(self.everyGuess) / Double(gamesP)))
  
     }
     //persistant data saving stuff
