@@ -79,29 +79,29 @@ class teamClass : Codable {
         
         self.gamesP = gamesP+1
         
-        if (self.gameGuess == 1){
-            self.won1 = self.won1+1
+        if (gameGuess == 1){
+            self.won1 = won1+1
         }
-        else if (self.gameGuess == 2){
-            self.won2 = self.won2+1
+        else if (gameGuess == 2){
+            self.won2 = won2+1
         }
-        else if (self.gameGuess == 3){
-            self.won3 = self.won3+1
+        else if (gameGuess == 3){
+            self.won3 = won3+1
         }
-        else if (self.gameGuess == 4){
-            self.won4 = self.won4+1
+        else if (gameGuess == 4){
+            self.won4 = won4+1
         }
-        else if (self.gameGuess == 5){
-            self.won5 = self.won5+1
+        else if (gameGuess == 5){
+            self.won5 = won5+1
         }
-        else if (self.gameGuess == 6){
-            self.won6 = self.won6+1
+        else if (gameGuess == 6){
+            self.won6 = won6+1
         }
-        else if (self.gameGuess == 7){
-            self.won7 = self.won7+1
+        else if (gameGuess == 7){
+            self.won7 = won7+1
         }
-        else if (self.gameGuess == 8){
-            self.won8 = self.won8+1
+        else if (gameGuess == 8){
+            self.won8 = won8+1
         }
         else{
             self.gamesL = self.gamesL + 1
