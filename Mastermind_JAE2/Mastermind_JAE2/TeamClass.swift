@@ -46,7 +46,7 @@ class teamClass : Codable {
     func teamStats() -> String {
         var stats = ""
         stats = "Total guesses: \(self.everyGuess)" + " Games Played: \(self.gamesP)"
-        stats = stats + " average: \(self.aver)"
+        stats = stats + " average: \(self.aver)" + "Games won in one: \(self.won1)"
         
         return stats
     }

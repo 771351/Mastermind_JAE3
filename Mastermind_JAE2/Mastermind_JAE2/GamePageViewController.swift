@@ -220,7 +220,7 @@ class GamePageViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         if (Answer1.text == "●●●" || Answer2.text == "●●●" || Answer3.text == "●●●" || Answer4.text == "●●●" || Answer5.text == "●●●" || Answer6.text == "●●●" || Answer7.text == "●●●" || Answer8.text == "●●●" )
                      {
                         playingTeam.gameDONE(gameGuess: count)
-                        teamNum = "Team" + teamNum
+                        
                         print(teamNum)
                         playingTeam.archive(fileName: teamNum )
                         print(playingTeam.teamStats())

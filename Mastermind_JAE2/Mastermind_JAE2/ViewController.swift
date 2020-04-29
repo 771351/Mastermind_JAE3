@@ -24,9 +24,9 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     func reloadAllComponents(){}
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         selectedTeam = teamlist[row]
-        teamSelectedNum = String(teamlist.count)
+        teamSelectedNum = "Team" + String(row + 1)
     }
-    var teamSelectedNum = "1"
+    var teamSelectedNum = "Team1"
 
   
    
