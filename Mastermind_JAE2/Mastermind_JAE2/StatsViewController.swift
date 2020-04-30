@@ -95,10 +95,9 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             eightTries.text = won8String
        }
    
-    
-   
-    
-    
+    //leaderboard
+    var sortedTeams : [teamClass] = []
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,9 +105,65 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         self.teamsPickerView.delegate = self
         self.teamsPickerView.dataSource = self
         
-        firstPlace.text = Team1.teamName
-       
-                // Do any additional setup after loading the view.
+        for n in teamlist{
+        if (n.aver > 0){
+            sortedTeams.append(n)
+         }
+        }
+
+        sortedTeams = sortedTeams.sorted {
+            $0.aver <= $1.aver
+        }
+        if (sortedTeams.count == 1){
+            firstPlace.text = sortedTeams[0].teamName
+            
+        }
+        else if (sortedTeams.count == 2){
+            firstPlace.text = sortedTeams[0].teamName
+            secondPlace.text = sortedTeams[1].teamName
+        }
+        else if (sortedTeams.count == 3){
+            firstPlace.text = sortedTeams[0].teamName
+            secondPlace.text = sortedTeams[1].teamName
+            thirdPlace.text = sortedTeams[2].teamName
+        }
+        else if (sortedTeams.count == 4){
+            firstPlace.text = sortedTeams[0].teamName
+            secondPlace.text = sortedTeams[1].teamName
+            thirdPlace.text = sortedTeams[2].teamName
+            fourthPlace.text = sortedTeams[3].teamName
+        }
+        else if (sortedTeams.count == 5){
+            firstPlace.text = sortedTeams[0].teamName
+            secondPlace.text = sortedTeams[1].teamName
+            thirdPlace.text = sortedTeams[2].teamName
+            fourthPlace.text = sortedTeams[3].teamName
+            fifthPlace.text = sortedTeams[4].teamName
+        }
+        else if (sortedTeams.count == 6){
+            firstPlace.text = sortedTeams[0].teamName
+            secondPlace.text = sortedTeams[1].teamName
+            thirdPlace.text = sortedTeams[2].teamName
+            fourthPlace.text = sortedTeams[3].teamName
+            fifthPlace.text = sortedTeams[4].teamName
+            sixthPlace.text = sortedTeams[5].teamName
+        }
+        else if (sortedTeams.count == 7){
+            firstPlace.text = sortedTeams[0].teamName
+            secondPlace.text = sortedTeams[1].teamName
+            thirdPlace.text = sortedTeams[2].teamName
+            fourthPlace.text = sortedTeams[3].teamName
+            fifthPlace.text = sortedTeams[4].teamName
+            sixthPlace.text = sortedTeams[5].teamName
+            seventhPlace.text = sortedTeams[6].teamName
+               }
+        
+
+
+        }
+        
+        
+      
     }
     
 
@@ -122,4 +177,4 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     */
 
-}
+
