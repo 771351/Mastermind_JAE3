@@ -25,24 +25,34 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     
     //outlets for all textfeilds on the stats page
-    @IBOutlet weak var firstPlace: UITextField!
-    @IBOutlet weak var secondPlace: UITextField!
-    @IBOutlet weak var thirdPlace: UITextField!
-    @IBOutlet weak var fourthPlace: UITextField!
-    @IBOutlet weak var fifthPlace: UITextField!
-    @IBOutlet weak var sixthPlace: UITextField!
-    @IBOutlet weak var seventhPlace: UITextField!
-    @IBOutlet weak var oneTry: UITextField!
-    @IBOutlet weak var twoTries: UITextField!
-    @IBOutlet weak var threeTries: UITextField!
-    @IBOutlet weak var fourTries: UITextField!
-    @IBOutlet weak var fiveTries: UITextField!
-    @IBOutlet weak var sixTries: UITextField!
-    @IBOutlet weak var sevenTries: UITextField!
-    @IBOutlet weak var eightTries: UITextField!
-    @IBOutlet weak var gamesLost: UITextField!
-    @IBOutlet weak var average: UITextField!
-    @IBOutlet weak var totalGamesPlayed: UITextField!
+ 
+   
+    @IBOutlet weak var oneTry: UILabel!
+    @IBOutlet weak var twoTries: UILabel!
+    @IBOutlet weak var threeTries: UILabel!
+    @IBOutlet weak var fourTries: UILabel!
+    @IBOutlet weak var fiveTries: UILabel!
+    @IBOutlet weak var sixTries: UILabel!
+    @IBOutlet weak var sevenTries: UILabel!
+    @IBOutlet weak var eightTries: UILabel!
+    @IBOutlet weak var totalGamesPlayed: UILabel!
+    @IBOutlet weak var gamesLost: UILabel!
+    @IBOutlet weak var average: UILabel!
+    @IBOutlet weak var firstPlace: UILabel!
+    @IBOutlet weak var secondPlace: UILabel!
+    @IBOutlet weak var thirdPlace: UILabel!
+    @IBOutlet weak var fourthPlace: UILabel!
+    @IBOutlet weak var fifthPlace: UILabel!
+    @IBOutlet weak var firstAverage: UILabel!
+    @IBOutlet weak var secondAverage: UILabel!
+    @IBOutlet weak var thirdAverage: UILabel!
+    @IBOutlet weak var fourthAverage: UILabel!
+    @IBOutlet weak var fifthAverage: UILabel!
+    @IBOutlet weak var firstGP: UILabel!
+    @IBOutlet weak var secondGP: UILabel!
+    @IBOutlet weak var thirdGP: UILabel!
+    @IBOutlet weak var fourthGP: UILabel!
+    @IBOutlet weak var fifthGP: UILabel!
     
     @IBOutlet weak var teamsPickerView: UIPickerView!
     var averageString : String = ""
@@ -56,6 +66,17 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     var won6String :  String = ""
     var won7String :  String = ""
     var won8String :  String = ""
+    var firstAverageString : String = ""
+       var secondAverageString : String = ""
+       var thirdAverageString : String = ""
+       var fourthAverageString : String = ""
+       var fifthAverageString : String = ""
+       var firstGPString : String = ""
+       var secondGPString : String = ""
+       var thirdGPString : String = ""
+       var fourthGPString : String = ""
+       var fifthGPString : String = ""
+
     
       lazy var teamlist = [Team1, Team2, Team3, Team4, Team5, Team6, Team7, Team8, Team9, Team10]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -116,47 +137,122 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         }
         if (sortedTeams.count == 1){
             firstPlace.text = sortedTeams[0].teamName
-            
+            secondPlace.text = ""
+            thirdPlace.text = ""
+            fourthPlace.text = ""
+            fifthPlace.text = ""
+            firstAverageString = String(sortedTeams[0].aver)
+            firstAverage.text = firstAverageString
+            secondAverage.text = ""
+            thirdAverage.text = ""
+            fourthAverage.text = ""
+            fifthAverage.text = ""
+            firstGPString = String(sortedTeams[0].gamesP)
+            firstGP.text = firstGPString
+            secondGP.text = ""
+            thirdGP.text = ""
+            fourthGP.text = ""
+            fifthGP.text = ""
+                
         }
         else if (sortedTeams.count == 2){
             firstPlace.text = sortedTeams[0].teamName
             secondPlace.text = sortedTeams[1].teamName
+            thirdPlace.text = ""
+            fourthPlace.text = ""
+            fifthPlace.text = ""
+            firstAverageString = String(sortedTeams[0].aver)
+            firstAverage.text = firstAverageString
+            secondAverageString = String(sortedTeams[1].aver)
+            secondAverage.text = secondAverageString
+            thirdAverage.text = ""
+            fourthAverage.text = ""
+            fifthAverage.text = ""
+            firstGPString = String(sortedTeams[0].gamesP)
+            firstGP.text = firstGPString
+            secondGPString = String(sortedTeams[1].gamesP)
+            secondGP.text = secondGPString
+            thirdGP.text = ""
+            fourthGP.text = ""
+            fifthGP.text = ""
         }
         else if (sortedTeams.count == 3){
             firstPlace.text = sortedTeams[0].teamName
             secondPlace.text = sortedTeams[1].teamName
             thirdPlace.text = sortedTeams[2].teamName
+            fourthPlace.text = ""
+            fifthPlace.text = ""
+            firstAverageString = String(sortedTeams[0].aver)
+            firstAverage.text = firstAverageString
+            secondAverageString = String(sortedTeams[1].aver)
+            secondAverage.text = secondAverageString
+            thirdAverageString = String(sortedTeams[2].aver)
+            thirdAverage.text = thirdAverageString
+            fourthAverage.text = ""
+            fifthAverage.text = ""
+            firstGPString = String(sortedTeams[0].gamesP)
+            firstGP.text = firstGPString
+            secondGPString = String(sortedTeams[1].gamesP)
+            secondGP.text = secondGPString
+            thirdGPString = String(sortedTeams[2].gamesP)
+            thirdGP.text = thirdGPString
+            fourthGP.text = ""
+            fifthGP.text = ""
         }
         else if (sortedTeams.count == 4){
             firstPlace.text = sortedTeams[0].teamName
             secondPlace.text = sortedTeams[1].teamName
             thirdPlace.text = sortedTeams[2].teamName
             fourthPlace.text = sortedTeams[3].teamName
+            fifthPlace.text = ""
+            firstAverageString = String(sortedTeams[0].aver)
+            firstAverage.text = firstAverageString
+            secondAverageString = String(sortedTeams[1].aver)
+            secondAverage.text = secondAverageString
+            thirdAverageString = String(sortedTeams[2].aver)
+            thirdAverage.text = thirdAverageString
+            fourthAverageString = String(sortedTeams[3].aver)
+            fourthAverage.text = fourthAverageString
+            fifthAverage.text = ""
+            firstGPString = String(sortedTeams[0].gamesP)
+            firstGP.text = firstGPString
+            secondGPString = String(sortedTeams[1].gamesP)
+            secondGP.text = secondGPString
+            thirdGPString = String(sortedTeams[2].gamesP)
+            thirdGP.text = thirdGPString
+            fourthGPString = String(sortedTeams[3].gamesP)
+            fourthGP.text = fourthGPString
+            fifthGP.text = ""
+            
         }
-        else if (sortedTeams.count == 5){
+        else {
             firstPlace.text = sortedTeams[0].teamName
             secondPlace.text = sortedTeams[1].teamName
             thirdPlace.text = sortedTeams[2].teamName
             fourthPlace.text = sortedTeams[3].teamName
             fifthPlace.text = sortedTeams[4].teamName
+            firstAverageString = String(sortedTeams[0].aver)
+            firstAverage.text = firstAverageString
+            secondAverageString = String(sortedTeams[1].aver)
+            secondAverage.text = secondAverageString
+            thirdAverageString = String(sortedTeams[2].aver)
+            thirdAverage.text = thirdAverageString
+            fourthAverageString = String(sortedTeams[3].aver)
+            fourthAverage.text = fourthAverageString
+            fifthAverageString = String(sortedTeams[4].aver)
+            fifthAverage.text = fifthAverageString
+            firstGPString = String(sortedTeams[0].gamesP)
+            firstGP.text = firstGPString
+            secondGPString = String(sortedTeams[1].gamesP)
+            secondGP.text = secondGPString
+            thirdGPString = String(sortedTeams[2].gamesP)
+            thirdGP.text = thirdGPString
+            fourthGPString = String(sortedTeams[3].gamesP)
+            fourthGP.text = fourthGPString
+            fifthGPString = String(sortedTeams[4].gamesP)
+            fifthGP.text = fifthGPString
         }
-        else if (sortedTeams.count == 6){
-            firstPlace.text = sortedTeams[0].teamName
-            secondPlace.text = sortedTeams[1].teamName
-            thirdPlace.text = sortedTeams[2].teamName
-            fourthPlace.text = sortedTeams[3].teamName
-            fifthPlace.text = sortedTeams[4].teamName
-            sixthPlace.text = sortedTeams[5].teamName
-        }
-        else if (sortedTeams.count == 7){
-            firstPlace.text = sortedTeams[0].teamName
-            secondPlace.text = sortedTeams[1].teamName
-            thirdPlace.text = sortedTeams[2].teamName
-            fourthPlace.text = sortedTeams[3].teamName
-            fifthPlace.text = sortedTeams[4].teamName
-            sixthPlace.text = sortedTeams[5].teamName
-            seventhPlace.text = sortedTeams[6].teamName
-               }
+        
         
 
 
