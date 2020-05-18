@@ -22,6 +22,7 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     var Team9 = teamClass (name: "xxxxxx")
     var Team10 = teamClass (name: "xxxxxx")
     var selectedTeam = teamClass (name: "xxxxxx")
+    var noTeams = teamClass (name: "there are no teams")
     
     
     //outlets for all textfeilds on the stats page
@@ -118,7 +119,7 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
    
     //leaderboard
     var sortedTeams : [teamClass] = []
-  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -134,6 +135,9 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
 
         sortedTeams = sortedTeams.sorted {
             $0.aver <= $1.aver
+        }
+        if sortedTeams.isEmpty {
+            sortedTeams.append(noTeams)
         }
         if (sortedTeams.count == 1){
             firstPlace.text = sortedTeams[0].teamName
