@@ -76,8 +76,8 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             backgroundview.alpha = 0
             pickerviewteam.reloadAllComponents()
             newName3.text = ""
+            viewDidLoad()
         }
-        
     }
     
     
@@ -193,6 +193,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             vc.Team8 = Team8
             vc.Team9 = Team9
             vc.Team10 = Team10
+            vc.selectedTeam = Team1
                        
             
             

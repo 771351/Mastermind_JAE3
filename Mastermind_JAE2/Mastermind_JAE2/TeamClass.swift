@@ -42,6 +42,23 @@ class teamClass : Codable {
         self.gameGuess = 0
         self.everyGuess = 0
     }
+    func freshteam() {
+        self.teamName = "xxxxxx"
+               self.gamesP = 0
+               self.gamesW = 0
+               self.gamesL = 0
+               self.aver = 0
+               self.won1 = 0
+               self.won2 = 0
+               self.won3 = 0
+               self.won4 = 0
+               self.won5 = 0
+               self.won6 = 0
+               self.won7 = 0
+               self.won8 = 0
+               self.gameGuess = 0
+               self.everyGuess = 0
+    }
     //function that returns string with team stats
     func teamStats() -> String {
         var stats = ""

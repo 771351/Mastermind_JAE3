@@ -22,6 +22,7 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     var Team9 = teamClass (name: "xxxxxx")
     var Team10 = teamClass (name: "xxxxxx")
     var selectedTeam = teamClass (name: "xxxxxx")
+    
     var noTeams = teamClass (name: "there are no teams")
     
     
@@ -77,7 +78,43 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
        var thirdGPString : String = ""
        var fourthGPString : String = ""
        var fifthGPString : String = ""
-
+        var whatteamselected = "Team1"
+    var intwhatteamselected = 1
+    func reloadAllComponents(){}
+    
+    
+    @IBAction func deleteTeam(_ sender: Any) {
+        print(whatteamselected)
+        print(selectedTeam.teamName)
+        selectedTeam.freshteam()
+        selectedTeam.archive(fileName: whatteamselected)
+        sortedTeams = []
+        viewDidLoad()
+        averageString = String(selectedTeam.aver)
+        average.text = averageString
+        gamesPString = String(selectedTeam.gamesP)
+        totalGamesPlayed.text = gamesPString
+        gamesLString = String(selectedTeam.gamesL)
+        gamesLost.text = gamesLString
+        won1String = String(selectedTeam.won1)
+        oneTry.text = won1String
+        won2String = String(selectedTeam.won2)
+        twoTries.text = won2String
+        won3String = String(selectedTeam.won3)
+        threeTries.text = won3String
+        won4String = String(selectedTeam.won4)
+        fourTries.text = won4String
+        won5String = String(selectedTeam.won5)
+        fiveTries.text = won5String
+        won6String = String(selectedTeam.won6)
+        sixTries.text = won6String
+        won7String = String(selectedTeam.won7)
+        sevenTries.text = won7String
+        won8String = String(selectedTeam.won8)
+        eightTries.text = won8String
+    
+        
+    }
     
       lazy var teamlist = [Team1, Team2, Team3, Team4, Team5, Team6, Team7, Team8, Team9, Team10]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -93,6 +130,7 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         }
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
             selectedTeam = teamlist[row]
+            whatteamselected = "Team" + String(row + 1)
             averageString = String(selectedTeam.aver)
             average.text = averageString
             gamesPString = String(selectedTeam.gamesP)
@@ -124,6 +162,32 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        averageString = String(selectedTeam.aver)
+        average.text = averageString
+        gamesPString = String(selectedTeam.gamesP)
+        totalGamesPlayed.text = gamesPString
+        gamesLString = String(selectedTeam.gamesL)
+        gamesLost.text = gamesLString
+        won1String = String(selectedTeam.won1)
+        oneTry.text = won1String
+        won2String = String(selectedTeam.won2)
+        twoTries.text = won2String
+        won3String = String(selectedTeam.won3)
+        threeTries.text = won3String
+        won4String = String(selectedTeam.won4)
+        fourTries.text = won4String
+        won5String = String(selectedTeam.won5)
+        fiveTries.text = won5String
+        won6String = String(selectedTeam.won6)
+        sixTries.text = won6String
+        won7String = String(selectedTeam.won7)
+        sevenTries.text = won7String
+        won8String = String(selectedTeam.won8)
+        eightTries.text = won8String
+        
+        
+              
         self.teamsPickerView.delegate = self
         self.teamsPickerView.dataSource = self
         
@@ -138,6 +202,7 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         }
         if sortedTeams.isEmpty {
             sortedTeams.append(noTeams)
+            
         }
         if (sortedTeams.count == 1){
             firstPlace.text = sortedTeams[0].teamName
@@ -261,10 +326,10 @@ class StatsViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
 
 
         }
-        
+}
         
       
-    }
+    
     
 
     /*
