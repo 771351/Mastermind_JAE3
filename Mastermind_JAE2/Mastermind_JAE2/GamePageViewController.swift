@@ -278,8 +278,9 @@ class GamePageViewController: UIViewController, UIPickerViewDataSource,UIPickerV
                winviewbackground.alpha = 0.8
                 count = 0
                 CorrectAnswer()
-                
-         
+                playingTeam.changegamesL()
+                playingTeam.changegamesP()
+                playingTeam.archive(fileName: teamNum )
             }
             //popup to say you won
             if count == 9
