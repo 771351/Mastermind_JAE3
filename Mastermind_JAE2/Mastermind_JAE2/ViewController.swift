@@ -76,7 +76,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             backgroundview.alpha = 0
             pickerviewteam.reloadAllComponents()
             newName3.text = ""
-            viewDidLoad()
+            
         }
     }
     
@@ -113,54 +113,65 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         {
         
         if Team1.teamName == "xxxxxx"{
+             Team1.freshteam()
             Team1.changename(name: newteamNAME)
                 print(1)
             Team1.archive(fileName: "Team1")
+            selectedTeam = Team1
                 
             }
             else if Team2.teamName == "xxxxxx"{
+             Team2.freshteam()
                 Team2.changename(name: newteamNAME)
                 print(2)
             Team2.archive(fileName: "Team2")
                 
             }
             else if Team3.teamName == "xxxxxx"{
+             Team3.freshteam()
                 Team3.changename(name: newteamNAME)
                 print(3)
             Team3.archive(fileName: "Team3")
                 
             }
             else if Team4.teamName == "xxxxxx"{
-                Team4.changename(name: newteamNAME)
+                 Team4.freshteam()
+            Team4.changename(name: newteamNAME)
                 print(4)
                 Team4.archive(fileName: "Team4")
             }
             else if Team5.teamName == "xxxxxx"{
+             Team5.freshteam()
                 Team5.changename(name: newteamNAME)
                 print(5)
                 Team5.archive(fileName: "Team5")
             }
             else if Team6.teamName == "xxxxxx"{
+             Team6.freshteam()
                 Team6.changename(name: newteamNAME)
                 print(6)
                 Team6.archive(fileName: "Team6")
             }
             else if Team7.teamName == "xxxxxx"{
+             Team7.freshteam()
                 Team7.changename(name: newteamNAME)
                 print(7)
                 Team7.archive(fileName: "Team7")
             }
             else if Team8.teamName == "xxxxxx"{
+            Team8.freshteam()
                 Team8.changename(name: newteamNAME)
                 print(8)
                 Team8.archive(fileName: "Team8")
             }
             else if Team9.teamName == "xxxxxx"{
+             Team9.freshteam()
                 Team9.changename(name: newteamNAME)
                 print(9)
                 Team9.archive(fileName: "Team9")
             }
             else if Team10.teamName == "xxxxxx"{
+             Team10.freshteam()
                 Team10.changename(name: newteamNAME)
                 print(10)
                 Team10.archive(fileName: "Team10")
