@@ -88,7 +88,7 @@ class teamClass : Codable {
        }
     //changes the teams average
     func changeaver(){
-        self.aver = Double(Double(self.everyGuess)/Double(self.gamesP))
+        self.aver = (Double(Double(self.everyGuess)/Double(self.gamesP)))
           }
     
     //will add one game played, updates total guesses and team average
